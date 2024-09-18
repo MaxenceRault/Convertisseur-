@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de devises</title>
+    <link rel="stylesheet" href="./front/css/style.css">
+</head>
+<body>
+    <!--Creation formulaire -->
+    <div class="currency-converter">
+        <h1>Convertisseur de devises</h1>
+        <form>
+            <label for="amount">Montant à convertir :</label>
+            <input type="number" id="amount" name="amount" placeholder="Entrez un montant" required>
+        
+            <label for="source-currency">Devise source :</label>
+            <select id="source-currency" name="source-currency">
+                <option value="usd">Dollar Américain (USD)</option>
+                <option value="eur">Euro (EUR)</option>
+                <option value="gbp">Livre Sterling (GBP)</option>
+                <option value="jpy">Yen Japonais (JPY)</option>
+             
+            </select>
+
+            <label for="target-currency">Devise cible :</label>
+            <select id="target-currency" name="target-currency">
+                <option value="usd">Dollar Américain (USD)</option>
+                <option value="eur">Euro (EUR)</option>
+                <option value="gbp">Livre Sterling (GBP)</option>
+                <option value="jpy">Yen Japonais (JPY)</option>
+               
+            </select>
+
+            
+        </form>
+    </div>
+</body>
+</html>
