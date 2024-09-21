@@ -1,67 +1,90 @@
+/* Style général du corps */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif; /* Police moderne et élégante */
+    background: linear-gradient(120deg, #f093fb, #f5576c); /* Dégradé de fond simple */
+    margin: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    color: #fff;
 }
 
+/* Conteneur principal */
 .currency-converter {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+    background-color: #fff; /* Blanc pur pour contraster avec l'arrière-plan */
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ombre douce pour effet de profondeur */
     text-align: center;
+}
+
+/* Titre */
+h1 {
+    font-size: 1.8em;
     color: #333;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
-input[type="number"] {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+/* Style des labels */
+label {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: left;
 }
 
+/* Style des champs de saisie */
+input[type="number"],
 select {
+    width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease;
 }
 
-select:focus, input[type="number"]:focus {
-    border-color: #007bff;
+/* Focus sur les champs */
+input[type="number"]:focus,
+select:focus {
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #f093fb;
 }
 
-button {
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+/* Style du résultat */
+#result {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f093fb;
+    color: #fff;
+    border-radius: 8px;
 }
 
-button:hover {
-    background-color: #0056b3;
+/* Adaptabilité pour les petits écrans */
+@media (max-width: 600px) {
+    .currency-converter {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input[type="number"],
+    select {
+        font-size: 0.95em;
+    }
 }
+    
