@@ -7,33 +7,34 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!--Creation formulaire -->
+    <!-- Creation formulaire -->
     <div class="currency-converter">
         <h1>Convertisseur de devises</h1>
         <form>
             <label for="amount">Montant à convertir :</label>
             <input type="number" id="amount" name="amount" placeholder="Entrez un montant" required>
         
-            <label for="source-currency">Devise source :</label>
-            <select id="source-currency" name="source-currency">
-                <option value="usd">Dollar Américain (USD)</option>
-                <option value="eur">Euro (EUR)</option>
-                <option value="gbp">Livre Sterling (GBP)</option>
-                <option value="jpy">Yen Japonais (JPY)</option>
-             
+            <label for="from-currency">Devise source :</label>
+            <select id="from-currency" name="from-currency">
+                <option value="USD">Dollar Américain (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">Livre Sterling (GBP)</option>
+                <option value="JPY">Yen Japonais (JPY)</option>
             </select>
 
-            <label for="target-currency">Devise cible :</label>
-            <select id="target-currency" name="target-currency">
-                <option value="usd">Dollar Américain (USD)</option>
-                <option value="eur">Euro (EUR)</option>
-                <option value="gbp">Livre Sterling (GBP)</option>
-                <option value="jpy">Yen Japonais (JPY)</option>
-               
+            <label for="to-currency">Devise cible :</label>
+            <select id="to-currency" name="to-currency">
+                <option value="USD">Dollar Américain (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">Livre Sterling (GBP)</option>
+                <option value="JPY">Yen Japonais (JPY)</option>
             </select>
 
-            <button type="submit">Convertir</button>
+            <!-- Résultat de la conversion -->
+            <p id="result">Veuillez entrer un montant et choisir les devises</p>
         </form>
     </div>
+
+    <script src="./js/script.js"></script> <!-- Lien vers le fichier JavaScript -->
 </body>
 </html>
