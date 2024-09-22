@@ -1,5 +1,7 @@
 # Convertisseur de Devises
 
+Rault Maxence ; Parone Raphël ; Sliman Alain*
+
 ## Description
 
 Cette application permet aux utilisateurs de convertir des montants d'une devise à une autre en utilisant des taux de change en temps réel. L'interface utilisateur est simple et conviviale, permettant une conversion rapide et efficace.
