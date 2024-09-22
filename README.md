@@ -1,6 +1,6 @@
 # Convertisseur de Devises
 
-Rault Maxence ; Parone Raphël ; Sliman Alain*
+Rault Maxence ; Parone Raphël ; Sliman Alain
 
 ## Description
 
