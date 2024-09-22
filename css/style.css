@@ -1,7 +1,7 @@
-/* Style général du corps */
+
 body {
-    font-family: 'Poppins', sans-serif; /* Police moderne et élégante */
-    background: linear-gradient(120deg, #f093fb, #f5576c); /* Dégradé de fond simple */
+    font-family: 'Poppins', sans-serif; 
+    background: linear-gradient(120deg, #f093fb, #f5576c); 
     margin: 0;
     height: 100vh;
     display: flex;
@@ -10,18 +10,17 @@ body {
     color: #fff;
 }
 
-/* Conteneur principal */
 .currency-converter {
-    background-color: #fff; /* Blanc pur pour contraster avec l'arrière-plan */
+    background-color: #fff; 
     border-radius: 15px;
     padding: 30px;
     max-width: 400px;
     width: 100%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ombre douce pour effet de profondeur */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
     text-align: center;
 }
 
-/* Titre */
+
 h1 {
     font-size: 1.8em;
     color: #333;
@@ -29,7 +28,7 @@ h1 {
     font-weight: bold;
 }
 
-/* Style des labels */
+
 label {
     display: block;
     font-size: 1em;
@@ -39,7 +38,7 @@ label {
     text-align: left;
 }
 
-/* Style des champs de saisie */
+
 input[type="number"],
 select {
     width: 100%;
@@ -53,14 +52,14 @@ select {
     transition: border-color 0.3s ease;
 }
 
-/* Focus sur les champs */
+
 input[type="number"]:focus,
 select:focus {
     outline: none;
     border-color: #f093fb;
 }
 
-/* Style du résultat */
+
 #result {
     font-size: 1.2em;
     font-weight: 600;
@@ -71,7 +70,7 @@ select:focus {
     border-radius: 8px;
 }
 
-/* Adaptabilité pour les petits écrans */
+
 @media (max-width: 600px) {
     .currency-converter {
         padding: 20px;

@@ -1,5 +1,5 @@
 // Clé API et URL de l'API
-const apiKey = "a59e0f8ea7379ff7cea11ddd"; // Remplace par ta clé API
+const apiKey = "a59e0f8ea7379ff7cea11ddd"; 
 const apiUrl = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/`;
 
 // Fonction de conversion
@@ -29,7 +29,7 @@ function convertCurrency() {
       return response.json();
     })
     .then((data) => {
-      // Vérifier si les taux de conversion existent pour la devise cible
+      
       const rateTo = data.conversion_rates[toCurrency];
       if (!rateTo) {
         document.getElementById("result").textContent = `Le taux de change pour ${toCurrency} est indisponible.`;
@@ -48,7 +48,7 @@ function convertCurrency() {
     });
 }
 
-// Ajoute des écouteurs d'événement sur le champ de saisie et les sélecteurs de devise
+
 document.getElementById("amount").addEventListener("input", convertCurrency);
 document.getElementById("from-currency").addEventListener("change", convertCurrency);
 document.getElementById("to-currency").addEventListener("change", convertCurrency);
